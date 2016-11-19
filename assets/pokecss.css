@@ -18,9 +18,13 @@ body{
 .footer {
 	background: -webkit-linear-gradient(left, #4C4799 , #67679B);
 	min-height: 100px;
-
+color: white;
 	width: 100%;
 	
+}
+
+a{
+	color: lightgrey;
 }
 
 .wrapper{
@@ -49,7 +53,7 @@ body{
 	font-size: 12px;
 	bottom: 0;
 	width: 100%;
-	position: absolute;
+	
 	text-align: center;
 }
 .list-group-item{

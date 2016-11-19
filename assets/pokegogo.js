@@ -37,7 +37,7 @@ $(document).ready(function() {
  
  function draw(){
 	 
-			
+	$("#toHide").hide();
 	 	var start = "";
 	var end = "";
 	for (var stop in stops) {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	}
 	
 
-            var line = new Microsoft.Maps.Polyline(locs);
+            var line = new Microsoft.Maps.Polyline(locs,  {strokeColor: new Microsoft.Maps.Color(150,0,0,255) } );
 			console.log(line);
 
             map.entities.push(line);
@@ -138,6 +138,7 @@ $(document).ready(function() {
 
 	// Calculate directions, which displays a route on the map
 	directionsManager.calculateDirections();
+	
 
  } 
 
