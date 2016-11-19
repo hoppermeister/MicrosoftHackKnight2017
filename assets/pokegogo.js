@@ -1,0 +1,3 @@
+getPokeStops = function(){
+	
+}
