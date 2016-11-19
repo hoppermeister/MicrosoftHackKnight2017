@@ -7,10 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-	This is a site.
+	<div class="wrapper">
+		<div class="row-fluid">
+			
+				<div class="col-sm-12">
+					<div id="logo">
+					
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="mapDiv" style="width: 600px;">
+						
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="">
+						<div class="form-group" style="width: 80%; margin: auto">
+						  <label for="start">Select start:</label>
+						  <select class="form-control" id="start">
+							
+						  </select>
+						  <label for="end">Select end:</label>
+						  <select class="form-control" id="bend">
+					
+						  </select>
+						  
+						  <label for="variance">Extra Time</label>
+						  <input type="text" class="form-control" id="variance" placeholder="5">
+						</div>
+						<div class="text-center">
+						<div id="start-button" class="btn btn-primary" onclick="draw()">
+						&nbsp;
+						</div>
+						</div>
+						
+						
+					</div>
+				
+			</div>
+			<div class="col-sm-6" style="min-height:200px; margin-top: 20px;">
+			
+			<ul class="list-group" id="stops">
+			  <li class="list-group-item">Stops:</li>
+			</ul>
+			</div>
+			<div class="footer col-sm-12">
+			
+			<div id="copyright">
+				Instructions: Select a starting and ending pokestop, as well as how much time (in minutes) you're willing to go out of your way for a comically small amount of items in a game no one plays anymore.
+				<br>
+				<br>
+				Gen 2 hype?
+				<br>
+				<br>
+				Made by Ryan Kelsey and Andrew Hopper at the 2016 UCF Hack Knight, brought to you by Microsoft
+			</div>
+			
+		</div>
+		</div>
+		
+	</div>
   
   </body>
   <footer>
+  <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>

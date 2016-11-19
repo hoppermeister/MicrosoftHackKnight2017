@@ -35,7 +35,7 @@ public class DoIt {
 			names.add(obj.getJSONObject(key).getString("poke_title"));
 		}
 
-		PrintWriter out = new PrintWriter(new FileWriter(new File("adj.txt")));
+		PrintWriter out = new PrintWriter(new FileWriter(new File("news.txt")));
 		for(int i = 0; i < locs.size(); i++) {
 			for(int j = i + 1; j < locs.size(); j++) {
 				double[] a = locs.get(i), b = locs.get(j);
@@ -51,7 +51,7 @@ public class DoIt {
 				obj = new JSONObject(sb.toString());
 				int time = obj.getJSONArray("resourceSets").getJSONObject(0).getJSONArray("resources").getJSONObject(0).getInt("travelDuration");
 				System.out.printf("From %s to %s: %d%n", names.get(i), names.get(j), time);
-				out.printf("From %s to %s: %d%n", names.get(i), names.get(j), time);
+				out.printf("%s|%s|%d%n", names.get(i), names.get(j), time);
 			}
 		}
 		out.close();
